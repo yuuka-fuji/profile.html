@@ -1,0 +1,543 @@
+/***
+    The new CSS reset - version 1.6.1 (last updated 25.5.2022)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+ */
+ *:where(:not(html, iframe, canvas, img, svg, video):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a, button {
+  cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul, menu {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+/* minimum style to allow to style meter element */
+meter {
+  -webkit-appearance: revert;
+  appearance: revert;
+}
+
+/* reset default text opacity of input placeholder */
+::placeholder {
+  color: unset;
+}
+
+/* fix the feature of 'hidden' attribute.
+ display:revert; revert to element instead of attribute */
+:where([hidden]) {
+  display: none;
+}
+
+/* revert for bug in Chromium browsers
+ - fix for the content editable attribute will work properly. */
+:where([contenteditable]:not([contenteditable="false"])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  /* -webkit-line-break: after-white-space; */
+}
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable="true"]) {
+  -webkit-user-drag: element;
+}
+/* リセットCSS 終了 */
+
+/* ここから */
+
+body{
+  background-color: #FFE7E7;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  color:rgb(60, 60, 60);
+  line-height: 1.9;
+  width: auto;
+  height: auto;
+}
+
+a {
+  text-decoration:none;
+  color: dimgrey;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 60%;
+  margin:0 auto;
+  /* background-color: rgb(218, 178, 255); */
+  
+}
+
+header{
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  /* background-color: aqua; */
+}
+
+
+
+
+.title {
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.nav-list {
+  letter-spacing: 3px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.nav-list li{
+  margin: 0 25px 0 25px;
+  opacity: 0.6;
+}
+
+.nav-list li:hover {
+  opacity: 1;
+}
+
+.top-wrapper {
+ /* background-color: aquamarine; */
+ text-align:center ;
+}
+
+.profile-title {
+  font-size: 35px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  letter-spacing: 5px;
+  
+}
+
+.name {
+  font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.profile-sentens {
+  font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+  font-size: 14px;
+}
+
+.profile {
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.skill {
+  text-align: center;
+}
+.skill-title {
+  letter-spacing: 5px;
+  font-size: 35px;
+  padding-bottom: 50px;
+  
+}
+
+.skill-img {
+  padding-bottom: 100px;
+}
+
+.skill-sentens {
+  font-size: 14px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+}
+
+.life-title {
+  font-size: 35px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.life-img {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 100px;
+  font-size: 24px;
+  
+}
+
+.Precious {
+  opacity: 1;
+  }
+.Precious:hover {
+  opacity: 0.8;
+  }
+
+.Value {
+    opacity: 1;
+}
+.Value:hover {
+  opacity: 0.8;
+  }
+
+.Activitiy {
+  opacity: 1;
+  }
+.Activitiy:hover {
+  opacity: 0.8;
+  }
+
+.main-bottom {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.Gorl-title {
+  font-size: 40px;
+  padding:25px 0 50px 0;
+}
+
+.Gorl-photo {
+  padding-bottom: 30px;
+}
+
+.Gorl-messese {
+  font-size: 14px;
+  display: inline-block;
+  text-align: left;
+  
+}
+
+.Next-page a {
+  opacity:1;
+}
+
+.Next-page a :hover {
+  opacity: 0.7;
+}
+
+.Next-page {
+  padding-bottom: 100px;
+  /* background-color: aquamarine; */
+}
+
+.thank-you {
+  font-size: 50px;
+  padding: 100px 0 80px 0;
+}
+
+.last {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0 80px 0;
+}
+
+.last-messese{
+  font-size: 30px;
+}
+
+.thank-you-pic {
+  padding-left: 20px;
+}
+
+
+
+.p {
+  font-size: 12px;
+  padding-top: 25px;
+}
+
+footer {
+  text-align: center;
+  padding:40px 0 50px 0;
+}
+
+/* ここからPreciousページです */
+
+
+.presious-title {
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 5px;
+  padding: 50px 0 30px 0;
+}
+
+/* .precious-messese {
+  text-align: center;
+  font-size: 20px;
+  font-weight:100;
+} */
+
+
+.precious {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.precious1 {
+  width: 360px;
+}
+
+.precious-title1 {
+  font-size: 18px;
+}
+
+.precious2 {
+  width: 440px;
+  padding: 0 40px 0 40px;
+}
+
+.precious-title2 {
+  font-size: 18px;
+}
+.precious3 {
+  width: 360px;
+}
+
+.precious-title3 {
+  font-size: 18px;
+}
+
+.p2 {
+  font-size: 15px;
+  padding-top: 25px;
+}
+
+.precious-pic2 {
+  text-align: center;
+  padding: 50px 0 35px 0;
+}
+
+.value-jump {
+  opacity: 1;
+}
+
+.value-jump:hover {
+  opacity: 0.7;
+}
+
+
+/* ここからValueページです */
+
+.value-pic {
+  text-align: center;
+}
+
+.Value-subtitle {
+  font-size: 35px;
+  padding: 0 0 40px 140px;
+}
+
+.Value-title {
+  text-align: center;
+  font-size: 45px;
+  padding-top: 20px;
+}
+
+.v3 {
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+
+.v3-title {
+  font-size: 20px;
+  padding: 10px 0 30px 0;
+}
+
+.v3-top3  {
+  font-size: 35px;
+  text-align: left;
+  display: inline-block;
+
+}
+
+.no1 {
+  text-align: center;
+}
+
+.Value-title2 {
+  font-size: 35px;
+  text-align: center;
+}
+.p3 {
+  font-size: 16px;
+  text-align: center;
+  padding: 20px 0 60px 0 ;
+}
+
+.top2 {
+  padding-top: 30px;
+}
+.no2 {
+  text-align: center;
+}
+
+.top3 {
+  padding-top: 30px;
+}
+
+.no3 {
+  text-align: center;
+}
+
+.ranking {
+  display: flex;
+
+}
+
+.pic1 {
+  width: 400px;
+  text-align: right;
+}
+
+.pic3 {
+  padding-left: 600px;
+}
+
+.pic2 {
+  text-align:center;
+}
+
+.precious-jump {
+  opacity: 1;
+}
+
+.precious-jump :hover {
+  opacity: 0.7;
+}
+
+.story-title {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.story-top {
+  padding: 50px 0 0 0;
+  text-align: center;
+}
+.top-pic {
+  padding-top: 50px;
+}
+
+.top-p {
+  text-align: left;
+  display: inline-block;
+
+}
+
+.story-pic1 {
+  padding: 100px 0 20px 100px;
+}
+
+.story-title1 {
+  font-size: 25px;
+  padding:0 0 30px 150px ;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.story-p1 {
+  width: 600px;
+  text-align: left;
+  padding: 0 50px 30px 0px;
+}
+
+.story-pic2 {
+  width: 600px;
+  padding-top: 100px;
+  padding-left: 30px;
+}
+
+.story-title2 {
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 30px;
+}
+
+.story-p2 {
+  text-align:center;
+  padding-bottom: 100px;
+}
+
+.story-pic3 {
+  background-color: aqua;
+  width: 600px;
+  display: flex;
+}
+
+.flex3 {
+  display: flex;
+  justify-content: center;
+  padding: 0 30px 100px 0;
+}
+.flex2 {
+  width: 600px;
+  padding: 150px 0 0 70px;
+
+}
+
+.story-title3 {
+  font-size: 25px;
+  padding: 30px;
+}
+
+/* .story-p3 {
+} */
+
+.story-title4 {
+  text-align: center;
+  font-size: 35px;
+  padding-bottom: 30px;
+}
+
+.story-p4 {
+  text-align: center;
+}
+
+.finish {
+  text-align: center;
+  padding: 200px 0 100px 0;
+}
