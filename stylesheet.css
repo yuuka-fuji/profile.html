@@ -80,7 +80,8 @@ meter {
 
 body{
   background-color: #FFE7E7;
-  font-family: 'Quicksand', sans-serif;
+  
+  font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
   font-size: 16px;
   color:rgb(60, 60, 60);
   line-height: 1.9;
@@ -118,9 +119,11 @@ header{
   font-size: 40px;
   text-align: center;
   padding-bottom: 40px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .nav-list {
+  font-family: 'Quicksand', sans-serif;
   letter-spacing: 3px;
   font-size: 18px;
   display: flex;
@@ -143,6 +146,7 @@ header{
 }
 
 .profile-title {
+  font-family: 'Quicksand', sans-serif;
   font-size: 35px;
   padding-top: 10px;
   padding-bottom: 20px;
@@ -170,6 +174,7 @@ header{
   text-align: center;
 }
 .skill-title {
+  font-family: 'Quicksand', sans-serif;
   letter-spacing: 5px;
   font-size: 35px;
   padding-bottom: 50px;
@@ -188,6 +193,7 @@ header{
 }
 
 .life-title {
+  font-family: 'Quicksand', sans-serif;
   font-size: 35px;
   padding-top: 50px;
   padding-bottom: 40px;
@@ -211,11 +217,19 @@ header{
   opacity: 0.8;
   }
 
+.Precious p {
+  font-family: 'Quicksand', sans-serif;
+}
+
 .Value {
     opacity: 1;
 }
 .Value:hover {
   opacity: 0.8;
+  }
+
+  .Value p {
+    font-family: 'Quicksand', sans-serif;
   }
 
 .Activitiy {
@@ -231,6 +245,7 @@ header{
 }
 
 .Gorl-title {
+  font-family: 'Quicksand', sans-serif;
   font-size: 40px;
   padding:25px 0 50px 0;
 }
@@ -260,6 +275,7 @@ header{
 }
 
 .thank-you {
+  font-family: 'Quicksand', sans-serif;
   font-size: 50px;
   padding: 100px 0 80px 0;
 }
@@ -271,6 +287,7 @@ header{
 }
 
 .last-messese{
+  font-family: 'Quicksand', sans-serif;
   font-size: 30px;
 }
 
@@ -294,6 +311,7 @@ footer {
 
 
 .presious-title {
+  font-family: 'Quicksand', sans-serif;
   font-size: 30px;
   text-align: center;
   letter-spacing: 5px;
@@ -362,11 +380,13 @@ footer {
 }
 
 .Value-subtitle {
+  font-family: 'Quicksand', sans-serif;
   font-size: 35px;
   padding: 0 0 40px 140px;
 }
 
 .Value-title {
+  font-family: 'Quicksand', sans-serif;
   text-align: center;
   font-size: 45px;
   padding-top: 20px;
@@ -445,14 +465,17 @@ footer {
   opacity: 0.7;
 }
 
+/* ここからstory */
+
 .story-title {
-  font-size: 30px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 35px;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 50px ;
 }
 
 .story-top {
-  padding: 50px 0 0 0;
+  padding: 40px 0 0 0;
   text-align: center;
 }
 .top-pic {
@@ -462,6 +485,7 @@ footer {
 .top-p {
   text-align: left;
   display: inline-block;
+  padding-top: 20px;
 
 }
 
