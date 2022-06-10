@@ -310,7 +310,7 @@ footer {
 /* ここからPreciousページです */
 
 
-.presious-title {
+.presious-title{
   font-family: 'Quicksand', sans-serif;
   font-size: 30px;
   text-align: center;
@@ -318,12 +318,11 @@ footer {
   padding: 50px 0 30px 0;
 }
 
-/* .precious-messese {
+.presious-title-p {
+  font-size: 24px;
   text-align: center;
-  font-size: 20px;
-  font-weight:100;
-} */
-
+  padding: 100px 0 50px 0;
+}
 
 .precious {
   display: flex;
@@ -336,6 +335,7 @@ footer {
 
 .precious-title1 {
   font-size: 18px;
+  padding-top: 20px;
 }
 
 .precious2 {
@@ -345,6 +345,8 @@ footer {
 
 .precious-title2 {
   font-size: 18px;
+  padding-top: 20px;
+
 }
 .precious3 {
   width: 360px;
@@ -352,6 +354,8 @@ footer {
 
 .precious-title3 {
   font-size: 18px;
+  padding-top: 20px;
+
 }
 
 .p2 {
